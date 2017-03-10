@@ -1,3 +1,71 @@
-// Place all the styles related to the stages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*--- stages card ---*/
+.stage-card {
+  background-color: rgba(2, 103, 193, 0.41);
+  margin: 30px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+.stage-card h2 {
+  text-align: center;
+}
+.stage-img {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #004e66;
+  margin-bottom: 20px;
+}
+.stage-img img {
+  max-width: 1000px;
+  height: 300px;
+  width: 100%;
+}
+
+.stage-content {
+  max-width: 1000px;
+}
+.stage-content h2 {
+  text-align: center;
+}
+.stage-content img {
+  width: 100%
+}
+/*--- Flexbox ---*/
+.stages-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stages-content {
+  flex: 1;
+}
+.stage-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 30%;
+}
+
+.btn-back {
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.btn-back:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.6s;
+}
+
+.btn-back:active {
+  background-color: grey;
+}
+
+/*--- Media Queries ---*/
+@media (min-width: 769px) {
+  .stage-card {
+    margin: 10px;
+  }
+}
