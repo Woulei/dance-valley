@@ -1,6 +1,6 @@
 class StagesController < ApplicationController
 
-  def list #Shows a list of all the stages
+  def index #Shows a list of all the stages
     @stages = Stage.all
   end
 
