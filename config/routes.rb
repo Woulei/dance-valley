@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  hoi f 
+  hoigjjdmd f
 end
