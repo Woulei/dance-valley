@@ -35,15 +35,19 @@
   max-width: 100%;
 }
 .artist-name {
-  background-color: #303030;
   padding: 0px;
   color: #303030;
   border-radius: 0px;
   text-align: center;
 }
-
+.artist-name a,
+.artist-name a:visited,
+.artist-name a:hover {
+  color: #ffac92;
+  text-decoration: none;
+}
 .artist-name:hover {
-  background-color: #004e66;
+  //background-color: #004e66;
 }
 
 /* ---- Flexbox ---- */

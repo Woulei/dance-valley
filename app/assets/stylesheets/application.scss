@@ -15,12 +15,17 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
 
+html {
+  background: #ffac92;
+}
+
 #sitename {
   font-family: "Lobster", cursive, sans-serif;
   font-size: 100px;
   text-align: center;
-  color: #FFD700;
+  color: #ffac92;
   background-color: #0267C1;
+  padding-bottom: 30px;
 }
 
 h1, h2 {
@@ -36,19 +41,20 @@ h3 {
   font-size: 35px;
 }
 
-p{
+p, li {
   font-family: "Lato", sans-serif;
   font-color: #3C3A3F;
   font-size: 20;
 }
 
 body {
-  background-color: #FF5724;
+  background-color: white;
   max-width: 1000px;
   margin: auto;
+  box-shadow: grey 0px 5px 5px;
+  padding: 0 100px 20px;
 }
 
 a {
 
 }
-

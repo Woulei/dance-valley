@@ -3,4 +3,11 @@
   <h2><%= @stage.name %></h2>
   <p>Description: <%= @stage.description %></p>
   <%= image_tag @stage.image_url %>
+
+  <h3>Artists performing on <%= @stage.name %></h3>
+  <p><ul>
+    <% @stage.artists.each do |artist| %>
+      <li><%= link_to artist.name, artist_path(artist) %></li>
+    <% end %>
+  </ul></p>
 </div>
