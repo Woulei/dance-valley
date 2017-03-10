@@ -11,5 +11,8 @@
   <%= f.label :website %>
   <%= f.text_field :website, :size => 30 %>
 
+  <%= f.label :stage_id %>
+  <%= f.collection_select(:stage_id, Stage.all, :id, :name) %>
+
   <%= f.submit (@artist.new_record? ? "Create" : "Update") %>
 <% end %>
