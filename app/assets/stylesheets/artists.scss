@@ -1,0 +1,40 @@
+
+.img_preview {
+border-radius: 10px;
+max-width: 400px;
+max-height: 300px;
+
+  }
+
+div {
+  max-width: 400px;
+  max-height: 200px;
+  text-align: justify;
+}
+
+.btn:hover a {
+  color: white;
+}
+
+.btn {
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.btn:link{
+color: black;
+}
+.btn:visited{
+color: black;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.6s;
+}
+.btn:active {
+  background-color: grey;
+}
