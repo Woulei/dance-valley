@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
+
+#sitename {
+  font-family: "Lobster", cursive, sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: #FFD700;
+  background-color: #0267C1;
+}
+
+h1, h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 60px;
+  font-color: #0267C1;
+
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-color: #2B9EB3;
+  font-size: 35px;
+}
+
+p{
+  font-family: "Lato", sans-serif;
+  font-color: #3C3A3F;
+  font-size: 20;
+}
+
+body {
+  background-color: #FF5724;
+  max-width: 1000px;
+  margin: auto;
+}
+
+a {
+
+}
