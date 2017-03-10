@@ -1,3 +1,35 @@
-// Place all the styles related to the stages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*--- stages card ---*/
+.stages-card {
+  background-color: #d9e1e8;
+  margin: 30px 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.stage-img {
+  height: 160px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color: #004e66;
+  margin-bottom: 20px;
+}
+/*--- Flexbox ---*/
+.stages-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stages-content {
+  flex: 1;
+}
+.valley-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 30%;
+}
+
+/*--- Media Queries ---*/
+@media (min-width: 769px) {
+  .stage-card {
+    margin: 10px;
+  }
+}

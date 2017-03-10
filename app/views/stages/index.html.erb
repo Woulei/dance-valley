@@ -4,7 +4,7 @@
   <% @stages.each do |stage| %>
     <div class="stage-card">
       <div class="stage-img"><%= image_tag stage.image_url %></div>
-      <h1><%= link_to stage.name, stage_path(stage.id) %></h1>
+      <h2><%= link_to stage.name, stage_path(stage.id) %></h2>
     </div>
   <% end %>
 </div>
