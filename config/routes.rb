@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  hoigjjdmd f
+  get "stages" => "stages#list"
 end
