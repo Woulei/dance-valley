@@ -1,0 +1,79 @@
+/* =================================
+  Artists
+==================================== */
+
+.artist-header{
+  background-color: #303030;
+  margin: 30px;
+}
+
+.artist_content{
+  background-color: #303030;
+  margin: 30px;
+}
+
+.artist-card {
+  background-color: #d9e1e8;
+  margin: 30px 10px;
+  padding: 0px;
+  border-radius: 0px;
+  min-width: 150px;
+}
+
+.artist-img {
+  height: 260px;
+  border-radius: 0px;
+  overflow: hidden;
+  background-color: #303030;
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+
+.artist-img img {
+  text-align: center;
+  max-width: 100%;
+}
+.artist-name {
+  background-color: #303030;
+  padding: 0px;
+  color: #303030;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.artist-name:hover {
+  background-color: #004e66;
+}
+
+/* ---- Flexbox ---- */
+
+.artist-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.artist-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 30%;
+}
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .artist-card {
+    margin: 10px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+}
