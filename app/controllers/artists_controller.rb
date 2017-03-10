@@ -12,14 +12,40 @@ class ArtistsController < ApplicationController
   end
 
   def create
-    artist_params = params.require(:artist).permit(:name, :description, :image_url, :website)
-
     @artist = Artist.new(artist_params)
 
     if @artist.save
-      rederict_to @artist
+      redirect_to @artist
     else
       render 'new'
+    end
+  end
+
+  def edit
+    @artist = Artist.find(params[:id])
+  end
+
+  def update
+    @artist = Artist.find(params[:id])
+
+    if @artist.update_attributes(artist_params)
+      redirect_to @artist
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @artist = Artist.find(params[:id])
+
+    @artist.destroy
+
+    redirect_to artists_path
+
+    private
+
+    def artist_params
+      params.require(:artist).permit(:name, :description, :image_url, :website)
     end
   end
 end
