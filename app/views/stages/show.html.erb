@@ -1,4 +1,6 @@
-<h1><%= @stage.name %></h1>
-
-<p>Description: <%= @stage.description %></p>
-<%= image_tag @stage.image_url %>
+<a href="/stages" class="btn-back" alt="Stages">Back to Stages</a>
+<div class="stage-content">
+  <h2><%= @stage.name %></h2>
+  <p>Description: <%= @stage.description %></p>
+  <%= image_tag @stage.image_url %>
+</div>
