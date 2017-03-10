@@ -1,5 +1,10 @@
 <h1>Stages</h1>
 
-<% @stages.each do |stage| %>
-<p><%= link_to stage.name, stage_path(stage.id) %></p>
-<% end %>
+<div class="stages-content">
+  <% @stages.each do |stage| %>
+    <div class="stage-card">
+      <div class="stage-img"><%= image_tag stage.image_url %></div>
+      <h1><%= link_to stage.name, stage_path(stage.id) %></h1>
+    </div>
+  <% end %>
+</div>
