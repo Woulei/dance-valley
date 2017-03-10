@@ -42,10 +42,10 @@ class ArtistsController < ApplicationController
 
     redirect_to artists_path
 
-    private
+  end
+  private
 
-    def artist_params
-      params.require(:artist).permit(:name, :description, :image_url, :website)
-    end
+  def artist_params
+    params.require(:artist).permit(:name, :description, :image_url, :website)
   end
 end

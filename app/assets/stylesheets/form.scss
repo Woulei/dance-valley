@@ -1,0 +1,36 @@
+h2 {
+  color: black;
+}
+
+body {
+  margin: 20px;
+}
+
+label {
+  margin: 10px;
+}
+
+textarea, input {
+  margin: 15px;
+  display: block;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 0.6s;
+}
+
+button:active {
+  background-color: grey;
+}
